@@ -7,7 +7,7 @@ import {
   CareerPreferences, 
   CareerMatch,
   LearnTopic,
-  MCQQuestion,
+  MCQQuestion,    
   ExamResultData,
   ExamConfigOptions
 } from './types';
@@ -30,8 +30,10 @@ import { ModuleFormalQuestions } from './components/ModuleFormalQuestions';
 import { ModuleInterests } from './components/ModuleInterests';
 import { ModuleCareerPreferences } from './components/ModuleCareerPreferences';
 import { CareerDetailsModal } from './components/CareerDetailsModal';
+
 import { PrintableReportModal } from './components/PrintableReportModal';
 import { AnimatePresence, motion } from 'motion/react';
+
 
 const DEFAULT_PROFILE: StudentProfile = {
   fullName: '',
@@ -54,13 +56,17 @@ const DEFAULT_SKILLS: SkillRatings = {
   specializedSkills: ['Python', 'SQL', 'Git & GitHub'],
 };
 
+// Default interest preferences for the student
 const DEFAULT_INTERESTS: InterestPreferences = {
   domains: ['Coding', 'Technology', 'AI & ML'],
+
   workTypes: ['Problem Solving', 'Technical Work'],
 };
 
+
 const DEFAULT_PREFERENCES: CareerPreferences = {
   priorities: ['High Salary', 'Career Growth'],
+  
   workEnvironment: 'Hybrid',
   targetTimeline: 'Campus Placements (2026)',
 };

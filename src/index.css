@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 /* Comprehensive Real-time Print Styles */
+
 @media print {
+
   /* Hide all non-printable elements */
+  
   nav,
   header,
   footer,
