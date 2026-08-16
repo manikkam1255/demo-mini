@@ -1,0 +1,7 @@
+{
+  "name": "AI Career Recommendation System",
+  "description": "A modern, intelligent career recommendation platform with skills assessment, ML-powered matching, personalized skill gap analysis, and tailored career roadmaps.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

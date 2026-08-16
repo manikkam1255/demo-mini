@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Comprehensive Real-time Print Styles */
+@media print {
+  /* Hide all non-printable elements */
+  nav,
+  header,
+  footer,
+  .print\:hidden,
+  #print-action-btn,
+  #close-report-modal-btn,
+  #direct-download-btn,
+  #open-tab-btn {
+    display: none !important;
+  }
+
+  /* Reset document root and body for printing */
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Unconstrain modal overlay during direct window.print */
+  .printable-modal-overlay {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    display: block !important;
+  }
+
+  .printable-modal-box {
+    position: static !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .printable-document-body {
+    overflow: visible !important;
+    max-height: none !important;
+    padding: 10mm !important;
+    background: #ffffff !important;
+  }
+
+  /* Avoid cutting off cards across pages */
+  .page-break-avoid,
+  .printable-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
